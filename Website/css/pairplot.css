@@ -1,3 +1,6 @@
+body{
+	background: #C0C0C0;
+}
 @media (max-width: 1000px){
 	.im{
 		text-align: center;
