@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Data Visualization</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predicting Trends in Quality Oriented Jobs</title>
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/pairplot.css">
+	
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<!---------------navbar section start------------------------------------>
+<nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="index.html">Job Trends</a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>        
+        <li><a href="index.html">About</a></li>
+		<li><a href="Graphs.html">Graphs</a></li>
+        <li><a href="pairplot.html">Pairplot</a></li>        
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav><br><br><br><br><br>
+<!---------------navbar section end------------------------------------> 
+<div class="title"><h1>Data Visualization</h1></div>
+  <div>
+  	<center>
+        <img src="Images/Pairplot of all the factors.png" class="im" style="text-align: center">
+    </center>
+  </div>
+<br><br>
+<center><h1>
+<a href="https://github.com/Shruti-D/Predicting-Trends-in-Quality-Oriented-Jobs.git">GitHub Project Link</a></li>
+</h1><br><br><br>	
+</center>
+  <!------------------------------- footer section start ------------------------------->
+
+<!-- =============== Footer Area Start ====================-->
+    <footer>
+		<p>This project is made for Orion E-Hackathon 2021 by<br> 
+		Abhilasha Deshmukh<br> 
+		Shruti Dalvi <br>
+		Nayana Dutargi</p><hr>
+        <p>Copyright &copy; 2021, All Rights Reserved.</p>
+    </footer>
+	
+<!------------------------------- footer section end ------------------------------->	
+    <!----<li> https://github.com/Shruti-D/Predicting-Trends-in-Quality-Oriented-Jobs </li>--->
+
+
+
+ <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+
+
+
+
+
+
+</body>
+</html>
+

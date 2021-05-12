@@ -1,0 +1,101 @@
+
+body{
+	background: #C0C0C0;
+}
+
+.im{
+	position: relative;
+	width: 1500px;
+	height: 2000px;
+	margin: 80px auto 0;
+}
+.im .bx{
+	position: relative;
+	width: calc(500px - 30px);
+	height: calc(400px - 30px);
+	background: #000;
+	float: left;
+	margin: 15px;
+	box-sizing: border-box;
+	overflow: hidden;
+	box-shadow: 0 5px 10px rgba(0,0,0,.8);
+}
+.im .bx .igBox{
+	position: relative;
+}
+.im .bx .igBox img{
+	width: 100%;
+	transition: 0.5s;
+}
+.im .bx .con{
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 2;
+	padding: 20px;
+	box-sizing: border-box;
+	text-align: center;
+}
+.im .bx .con h2{
+	margin: 0 0 10px;
+	font-size: 20px;
+	padding: 0;
+	color: #fff;
+	transition: 0.5s;
+	transform: translateY(50px);
+	opacity: 0;
+	visibility: hidden;
+}
+.im .bx .con p{
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	transition: 0.5s;
+	transform: translateY(50px);
+	opacity: 0;
+	visibility: hidden;
+}
+@media (max-width: 1500px){
+	.im{
+	    width: 1000px;
+	    height: 3200px;
+	    margin: 80px auto 80px;
+	    margin-bottom: 200px;
+	}
+    .im .bx{
+	    width: calc(500px - 30px);
+	    height: calc(400px - 30px);
+    }
+}
+@media (max-width: 1000px){
+	.im{
+	    width: 800px;
+	    height: 3200px;
+	    margin: 80px auto 80px;
+	}
+    .im .bx{
+	    width: calc(400px - 30px);
+	    height: calc(400px - 30px);
+    }
+    img{
+    	height: 370px;
+    }
+}
+@media (max-width: 800px){
+	.im{
+	    width: 400px;
+	    height: 6000px;
+	    margin: 80px auto 80px;
+	}
+    .im .bx{
+	    width: calc(400px - 30px);
+	    height: calc(400px - 30px);
+    }
+    img{
+    	height: 370px;
+    }
+}
+}
+
+
